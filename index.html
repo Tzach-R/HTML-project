@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awsome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JS -->
+    <script src="Js/carousel.js" defer></script>
+
+</head>
+
+<body style="height: 100%;">
+    <header>
+        <div class="main-menu">
+            <input type="checkbox" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <div class="navbar-links">
+                <nav class="NavBar">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contactMe">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" class="home">
+        <div class="homeImg">
+            <img id="me" src="./gallery/MyFace.jpg">
+        </div>
+        <div class="homeContent">
+            <h3>Hi There! It's Me</h3>
+            <h1>Tzach Rubinstein</h1>
+            <h3>And I'm a budding full-stack developer!</h3>
+            <p>Hey there! I'm Tzach Rubinstein, a budding web developer who's very passionate about her studies.
+                Currently trying to master HTML, CSS and SASS.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/tzach.rubinstein"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/tzachrubi/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Tzach-R"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" class="about">
+        <div class="aboutContent">
+            <h2>About Me</h2>
+            <p>
+                Hello again, I'm Tzach. I'm 25 years-old who's diving headfirst into the exciting worlds of web
+                development. In addition to being a budding web wizard, I'm also a translator.<br>
+                With a knack for coding and a flair for languages, I'm on a mission to conquer the digital and
+                linguistic landscapes.<br>
+                Armed with a small stash of HTML and CSS tricks up my sleeve, alongside a passion for crafting
+                captivating translations,<br>
+                I'm bringing youthful energy and fresh perspectives to every project. Let's rock this digital playground
+                and linguistic maze together!
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" class="gallery">
+        <h2>My Recent Projects</h2>
+        <br>
+        <h3>Landing Pages: HTML & CSS</h3>
+        <br>
+        <div class="carousel">
+
+            <!-- Left Button -->
+            <button id="prev-btn" class="prev-btn btn btn-outline-secondary"> Back </button>
+
+            <!-- List Container -->
+            <div id="item-list" class="item-list">
+                <!-- Items -->
+                <a href="projectPages/ProjectPage1.html"><img id="item" class="item" src="gallery/MiniCoffee.png" /></a>
+                <a href="projectPages/ProjectPage2.html"><img id="item" class="item" src="gallery/Minipink.png" /></a>
+                <a href="projectPages/ProjectPage3.html"><img id="item" class="item" src="gallery/MiniHere.png" /></a>
+                <a href="projectPages/ProjectPage4.html"><img id="item" class="item"
+                        src="gallery/Miniconsult.png" /></a>
+                <a href="projectPages/ProjectPage5.html"><img id="item" class="item" src="gallery/Minitravel.png" /></a>
+                <a href="projectPages/ProjectPage6.html"><img id="item" class="item"
+                        src="gallery/MiniDarkBlue.png" /></a>
+            </div>
+
+            <!-- Right Button -->
+            <button id="next-btn" class="next-btn btn btn-outline-secondary"> Next </button>
+        </div>
+        <br>
+        <h3>JS Based Mini Games</h3>
+        <br>
+        <div class="carousel">
+
+            <!-- Left Button -->
+            <button id="prev-btn" class="prev-btn btn btn-outline-secondary"> Back </button>
+
+            <!-- List Container -->
+            <div id="item-list" class="item-list">
+                <!-- Items -->
+                <a href="gamesJS/LandingC4.html"><img id="item" class="item" src="gallery/c4Mini.png" /></a>
+                <a href="gamesJS/LandingCapi.html"><img id="item" class="item" src="gallery/countriesMini.png" /></a>
+                <a href="gamesJS/LandingHman.html"><img id="item" class="item" src="gallery/hangmanMini.png" /></a>
+                <a href="gamesJS/LandingMmry.html"><img id="item" class="item" src="gallery/mmryMini.png" /></a>
+                <a href="gamesJS/LandingPoke.html"><img id="item" class="item" src="gallery/pokeMini.png" /></a>
+                <a href="gamesJS/LandingSimon.html"><img id="item" class="item" src="gallery/simonMini.png" /></a>
+                <a href="gamesJS/LandingSnake.html"><img id="item" class="item" src="gallery/snakeMini.png" /></a>
+                <a href="gamesJS/LandingTtt.html"><img id="item" class="item" src="gallery/TicMini.png" /></a>
+            </div>
+
+            <!-- Right Button -->
+            <button id="next-btn" class="next-btn btn btn-outline-secondary"> Next </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact" class="contactMe">
+        <div class="formContainer">
+            <div class="contactImage">
+                <img src="gallery/send-message_6652725.png" aper plane>
+            </div>
+            <form action="#">
+                <span class="contactTitle">
+                    <h2>Contact Me</h2>
+                </span>
+                <div class="formGroup">
+                    <label for="name">Your Name:</label>
+                    <input type="text" class="name" name="name" required>
+                </div>
+                <div class="formGroup">
+                    <label for="email">Your Email:</label>
+                    <input type="email" class="email" name="email" required>
+                </div>
+                <div class="formGroup">
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" class="phone" name="phone" required>
+                </div>
+                <div class="formGroup">
+                    <label for="message">Your Message:</label>
+                    <textarea class="message" name="message" required></textarea>
+                </div>
+                <div class="formGroup">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy;Tzach Rubinstein</p>
+        </div>
+    </footer>
+</body>
+
+</html>

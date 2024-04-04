@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Zeyada";
+}
+
+body {
+    background-color: #8758ff;
+}
+
+.container {
+    font-size: 20px;
+    background-color: #ffffff;
+    width: 90vw;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+
+#categoriesContainer {
+    text-align: center;
+}
+
+#categoriesContainer div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+}
+
+#categoriesContainer button {
+    padding: 0.6em 1.2em;
+    border: 3px solid #6229f2;
+    background-color: #ffffff;
+    color: #8758ff;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#categoriesContainer button:disabled {
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+}
+
+#categoriesContainer button.active {
+    background-color: #8758ff;
+    border: 3px solid #6229f2;
+    color: #fff;
+}
+
+.letterContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+#letterContainer button {
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: #ffffff;
+}
+
+.newGamePopup {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em;
+}
+
+#userInputSection {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: 0.6em 0 1.2em 0;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    border: 1px solid #000000;
+}
+
+.hide {
+    display: none;
+}
+
+#resultText h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#resultText p {
+    font-size: 1.8em;
+    margin: 1em 0 2em 0;
+}
+
+#resultText span {
+    font-weight: 600;
+}
+
+#newGameBtn {
+    font-size: 1.8em;
+    padding: 0.5em 1em;
+    background-color: #8758ff;
+    border: 3px solid #6229f2;
+    color: #fff;
+    border-radius: 0.2em;
+}
+
+.win-msg {
+    color: #00ff88;
+}
+
+.lose-msg {
+    color: #ff0000;
+}

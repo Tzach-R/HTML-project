@@ -1,0 +1,23 @@
+$lightpurple2: #c77dffef;
+
+.about {
+    width: 100%;
+    height: 21em;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    background-color: $lightpurple2;
+
+    .aboutContent {
+        width: 100%;
+    }
+
+    .aboutContent h2 {
+        font: Medium 500 25px Ubuntu;
+    }
+
+    .aboutContent p {
+        font: Light 300 18px Ubuntu;
+    }
+}

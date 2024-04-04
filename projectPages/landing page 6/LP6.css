@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-size: 100% 55%;
+    background-image: url(../images/LP6BG.png);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #d3e10e;
+    font-family: Assistant, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+p {
+    color: #f9f9f9;
+    margin-top: 2vh;
+    text-align: end;
+    font-family: Assistant Extralight, sans-serif;
+}
+
+.opener {
+    width: 100vw;
+    height: 53vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: center;
+    align-items: end;
+    gap: 1vw;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font: normal normal bold 10px/14px Heebo;
+}
+
+button {
+    color: #011560;
+    background-color: #d3e10e;
+    width: 8vw;
+    height: 35%;
+    margin-right: 3vw;
+    border: none;
+    font: normal normal bold 14px/19px Heebo;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 2vh;
+    font: normal normal bold 10px/14px Heebo;
+    font-weight: bold;
+    color: #011560;
+}
+
+input {
+    border: none;
+    height: 3.5vh;
+    width: 20vw;
+    background-color: #f6f6f6;
+    border-bottom: 3px solid #d3e10e;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        align-items: center;
+        background-size: 100% 50%;
+    }
+
+    form {
+        height: 47vh;
+        flex-direction: column;
+        width: 75%;
+        align-items: end;
+    }
+
+    .opener {
+        margin-top: 10vh;
+        justify-content: start;
+        padding-bottom: 12vh;
+        gap: 5vh;
+    }
+
+    .formBox {
+        justify-content: center;
+
+        width: 100%;
+        height: 30%;
+    }
+
+    input {
+        width: 100%;
+        height: 40%;
+    }
+
+    label {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    button {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 20%;
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        width: 70%;
+    }
+}

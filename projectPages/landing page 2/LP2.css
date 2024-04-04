@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/LP2BG.png);
+    background-size: 100vw 55vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    padding-right: 16%;
+    padding-top: 17vh;
+}
+
+.window {
+    background-color: #1a1a1ad4;
+    height: 70vh;
+    width: 28vw;
+    top: 16vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    right: 16vw;
+    padding-top: 2%;
+    font-family: heebo;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: heebo;
+    font-weight: 600;
+    width: 100%;
+    height: 15%;
+    font-size: 1.75em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    padding-left: 15%;
+    padding-right: 15%;
+    color: #f9f9f9;
+    font-size: 0.8em;
+    direction: rtl;
+    font-family: heebo;
+    text-align: justify;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 13%;
+}
+
+form {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    width: 100%;
+    height: 55%;
+    justify-content: start;
+    align-items: start;
+}
+
+.LabelInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+    font-family: heebo;
+}
+
+label {
+    text-align: right;
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    font-family: heebo;
+}
+
+input {
+    width: 100%;
+    height: 55%;
+    margin-bottom: 3vh;
+}
+
+button {
+    background-color: #d31c75;
+    font-family: heebo;
+    width: 40%;
+    height: 10%;
+    color: #ffffff;
+    font-size: 1em;
+    border: none;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 900px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 767px) {
+    p {
+        font-size: 0.7em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .window {
+        width: 50%;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+}

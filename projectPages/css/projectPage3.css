@@ -1,0 +1,68 @@
+/* $darkpurple2: #3c096c;
+$lightpurple1: #9d4edde3; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a:link a:visited a:hover {
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    font-family: Ubuntu;
+    color: #9d4edde3;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c096c;
+    font-family: Ubuntu;
+}
+
+.containerFooter {
+    color: #3c096c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+}
+
+.containerFooter p {
+    color: #9d4edde3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    background-color: #3c096c;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+    font-size: 24px;
+    color: #9d4edde3;
+    padding: 1em;
+    text-align: center;
+}
+
+.image {
+    top: 783px;
+    left: 366px;
+    width: 1189px;
+    height: 618px;
+    padding: 2em;
+}

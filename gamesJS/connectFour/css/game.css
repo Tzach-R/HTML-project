@@ -1,0 +1,46 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #ebd1ffef;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+ol li {
+  font-weight: 400;
+}
+
+#board {
+  height: 540px;
+  width: 630px;
+  background-color: blue;
+  border: 10px solid navy;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+
+  /* Circle */
+  background-color: #ebd1ffef;
+  border-radius: 50%;
+  border: 5px solid navy;
+}
+
+.red-piece {
+  background-color: red;
+}
+
+.yellow-piece {
+  background-color: yellow;
+}

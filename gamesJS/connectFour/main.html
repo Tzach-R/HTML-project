@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- SCSS -->
+    <link rel="stylesheet" href="css/game.css">
+    <!-- JS -->
+    <script src="js/c4Game.js" defer></script>
+</head>
+
+<body>
+    <h1>Connect Four</h1>
+    <h2>Rules of the Game:</h2>
+    <ol>
+        <li>Players take turns dropping their colored discs into slots in a grid.</li>
+        <li>The goal is to connect four of your discs in a row, either vertically, horizontally, or diagonally.</li>
+        <li>The first player to achieve four connected discs wins the game.</li>
+    </ol>
+    <br>
+    <h3 id="winner"></h3>
+    <div id="board"></div>
+</body>
+
+</html>

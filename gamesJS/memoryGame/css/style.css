@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#rules {
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+ol li {
+    text-align: center;
+    /* width: 300px; */
+}
+
+h1 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+h2 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+#grid-container {
+    margin: 16px auto;
+    min-height: calc(100vh - 32px);
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    box-shadow: 1px 1px 8px black;
+}
+
+.card img {
+    /* absolute to the parent with a position property */
+    /* if parent with position does not exist -> absolute to html */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+
+.back {
+    transform: rotateY(0deg);
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.card.flip .back {
+    transform: rotateY(180deg);
+}
+
+.card.flip .front {
+    transform: rotateY(0deg);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <!-- SASS -->
+    <link rel="stylesheet" href="css/snake.css" />
+    <!-- JS -->
+    <script src="js/snakeGame.js" defer></script>
+</head>
+
+<body>
+    <h2>Snake Game</h2><br>
+    <h4>How to play:</h4><br>
+    <ol>
+        <li>Use the arrow keys to move the "snake" around the board.</li>
+        <li>As the snake finds food, it eats it, and grows larger.</li>
+        <li>You lose when the snake either crashes in to the borader or moves into itself.</li>
+        <li>The goal is to make the snake as large as possible before losing.</li>
+    </ol>
+    <div id="game-container">
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <button id="startBtn" type="button">Start Game</button>
+    </div>
+</body>
+
+</html>
